@@ -10,7 +10,7 @@ const IntroductionMenu = () => {
             <PopularPosts/>
             <Tags/>
         </div>
-    )
-}
+    );
+};
 
 export default IntroductionMenu;
