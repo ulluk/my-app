@@ -1,4 +1,28 @@
 import React from "react";
+import PopularPost from "./PopularPost";
+
+const PopularPostInfo = [
+    {
+        img: "https://www.w3schools.com/w3images/workshop.jpg",
+        title: "Lorem",
+        title_desc: "Sed mattis nunc"
+    },
+    {
+        img: "https://www.w3schools.com/w3images/gondol.jpg",
+        title: "Ipsum",
+        title_desc: "Praes tinci sed"
+    },
+    {
+        img: "https://www.w3schools.com/w3images/skies.jpg",
+        title: "Dorum",
+        title_desc: "Ultricies congue"
+    },
+    {
+        img: "https://www.w3schools.com/w3images/rock.jpg",
+        title: "Mingsum",
+        title_desc: "Lorem ipsum dipsum"
+    }
+]
 
 const PopularPosts = () => {
     return (
@@ -8,50 +32,26 @@ const PopularPosts = () => {
                     <h4>Popular Posts</h4>
                 </div>
                 <ul className="w3-ul w3-hoverable w3-white">
-                    <li className="w3-padding-16">
-                        <img
-                            src="https://www.w3schools.com/w3images/workshop.jpg"
-                            alt="Image"
-                            className="w3-left w3-margin-right"
-                            style={{width: 50}}
-                        />
-                        <span className="w3-large">Lorem</span>
-                        <br/>
-                        <span>Sed mattis nunc</span>
-                    </li>
-                    <li className="w3-padding-16">
-                        <img
-                            src="https://www.w3schools.com/w3images/gondol.jpg"
-                            alt="Image"
-                            className="w3-left w3-margin-right"
-                            style={{width: 50}}
-                        />
-                        <span className="w3-large">Ipsum</span>
-                        <br/>
-                        <span>Praes tinci sed</span>
-                    </li>
-                    <li className="w3-padding-16">
-                        <img
-                            src="https://www.w3schools.com/w3images/skies.jpg"
-                            alt="Image"
-                            className="w3-left w3-margin-right"
-                            style={{width: 50}}
-                        />
-                        <span className="w3-large">Dorum</span>
-                        <br/>
-                        <span>Ultricies congue</span>
-                    </li>
-                    <li className="w3-padding-16 w3-hide-medium w3-hide-small">
-                        <img
-                            src="https://www.w3schools.com/w3images/rock.jpg"
-                            alt="Image"
-                            className="w3-left w3-margin-right"
-                            style={{width: 50}}
-                        />
-                        <span className="w3-large">Mingsum</span>
-                        <br/>
-                        <span>Lorem ipsum dipsum</span>
-                    </li>
+                    <PopularPost
+                        img={PopularPostInfo[0].img}
+                        title={PopularPostInfo[0].title}
+                        title_desc={PopularPostInfo[0].title_desc}
+                    />
+                    <PopularPost
+                        img={PopularPostInfo[1].img}
+                        title={PopularPostInfo[1].title}
+                        title_desc={PopularPostInfo[1].title_desc}
+                    />
+                    <PopularPost
+                        img={PopularPostInfo[2].img}
+                        title={PopularPostInfo[2].title}
+                        title_desc={PopularPostInfo[2].title_desc}
+                    />
+                    <PopularPost
+                        img={PopularPostInfo[3].img}
+                        title={PopularPostInfo[3].title}
+                        title_desc={PopularPostInfo[3].title_desc}
+                    />
                 </ul>
             </div>
             <hr/>
