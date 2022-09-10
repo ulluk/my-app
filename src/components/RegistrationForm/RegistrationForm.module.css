@@ -1,0 +1,43 @@
+.fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input{
+    width: 270px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+}
+.inputTextarea{
+    width: 1080px;
+    height: 75px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.title{
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.mainTitle{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form{
+    background-color: #121f24;
+    color: #f3f3f3;
+}
+
+.button{
+    border: 0;
+    border-radius: 4px;
+    background-color: #f3841f;
+    color: #f3f3f3;
+    width: 130px;
+    height: 40px;
+    font-size: 20px;
+}

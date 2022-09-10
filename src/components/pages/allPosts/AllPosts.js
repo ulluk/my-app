@@ -1,9 +1,8 @@
-import React from "react";
-import Post from "./Post";
-import posts from "../constants/blockEntriesPosts";
+import React from 'react';
+import posts from "../../../constants/blockEntriesPosts";
+import Post from "../../Post";
 
-
-const BlogEntries = () => {
+const AllPosts = () => {
     const elems = posts.map((item, index) => {
         return <Post
             key={index}
@@ -16,11 +15,10 @@ const BlogEntries = () => {
         />
     })
     return (
-        <div className="w3-col l8 s12">
+        <div>
             {elems}
-            <Post/>
         </div>
-    )
-}
+    );
+};
 
-export default BlogEntries
+export default AllPosts;

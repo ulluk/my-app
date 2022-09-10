@@ -1,6 +1,5 @@
-import React, {createElement} from "react";
-import tags from "../constants/tags";
-
+import React from 'react';
+import tags from "../../../constants/tags";
 
 const Tags = () => {
     let content = tags.map((item, index) => {
@@ -27,4 +26,5 @@ const Tags = () => {
         </>
     );
 };
-export default Tags
+
+export default Tags;

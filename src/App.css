@@ -1,0 +1,29 @@
+.btn-more {
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    border: 0;
+}
+
+.menu{
+    background-color: darkcyan;
+    padding: 10px;
+}
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.menu .active{
+    color: goldenrod;
+}

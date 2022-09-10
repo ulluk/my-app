@@ -1,0 +1,26 @@
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.catalog{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.catalog_card{
+    background-color: #F7F7F7;
+    width: 400px;
+    height: 368px;
+    padding: 40px 25px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    box-shadow: 1px 2px 9px 2px #c0b4b4;
+}
