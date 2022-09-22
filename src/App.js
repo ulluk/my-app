@@ -6,24 +6,22 @@ import Form from "./components/pages/Form/Form";
 import Header from "./components/Header";
 import Catalog from "./components/pages/catalog/Catalog";
 import NotFound from "./components/pages/notFound/NotFound";
-import Iphone from "./components/pages/iphone/Iphone";
-import Ipad from "./components/pages/ipad/Ipad";
-import Watch from "./components/pages/watch/Watch";
-import Iphones from "./components/pages/iphones/Iphones";
+import Products from "./components/pages/Products/Products";
+import About from "./components/pages/about/About";
+import FetchTest from "./components/pages/fetchTest/FetchTest";
+import AddProducts from "./components/pages/addProducts/AddProducts";
 
 const App = () => {
     return (
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path="/" element={<Main/>} />
-                <Route path="/catalog" element={<Catalog/>}>
-                    <Route path="iphone" element={<Iphone/>}/>
-                    <Route path="ipad" element={<Ipad/>}/>
-                    <Route path="watch" element={<Watch/>}/>
-                </Route>
-                <Route path="/iphones" element={<Iphones/>} />
-                <Route path="/form" element={<Form/>} />
+                <Route path="/form" element={<Form/>}/>
+                <Route path="/about" element={<About/>}/>
+                <Route path="/catalog" element={<Catalog/>}/>
+                <Route path="/catalog/:catalog_name" element={<Products/>}/>
+                <Route path="/fetchTest" element={<FetchTest/>}/>
+                <Route path="/addProducts" element={<AddProducts/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
         </BrowserRouter>
